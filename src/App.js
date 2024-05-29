@@ -6,8 +6,11 @@ import Legal from "./Pages/Legal";
 import NotFound from "./Pages/NotFound";
 import Appointment from "./Pages/Appointment";
 import Doctors from './Pages/Doctors';
+import DoctorForm from './Pages/DoctorForm';
+
 
 function App() {
+  
   return (
     <div className="App">
       <Router basename="/Health-Plus">
@@ -16,6 +19,7 @@ function App() {
           <Route path="/legal" element={<Legal />} />
           <Route path="/appointment" element={<Appointment />} />
           <Route path="/doctors" element={<Doctors/>}/>
+          <Route path="/doctorform" element={<DoctorForm/>}/>
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Router>
